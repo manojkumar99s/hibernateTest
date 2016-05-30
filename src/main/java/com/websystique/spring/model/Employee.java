@@ -28,7 +28,7 @@ public class Employee {
 	private LocalDate joiningDate;
 
 	@Column(name = "SALARY", nullable = false)
-	private BigDecimal salary;
+	private Double salary;
 	
 	@Column(name = "SSN", unique=true, nullable = false)
 	private String ssn;
@@ -57,11 +57,11 @@ public class Employee {
 		this.joiningDate = joiningDate;
 	}
 
-	public BigDecimal getSalary() {
+	public Double getSalary() {
 		return salary;
 	}
 
-	public void setSalary(BigDecimal salary) {
+	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
 

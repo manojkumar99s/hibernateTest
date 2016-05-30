@@ -32,7 +32,7 @@ public class AppMain {
 		Employee employee1 = new Employee();
 		employee1.setName("Han Yenn");
 		employee1.setJoiningDate(new LocalDate(2010, 10, 10));
-		employee1.setSalary(new BigDecimal(10000));
+		employee1.setSalary(new Double(10000));
 		employee1.setSsn("ssn00000001");
 
 		/*
@@ -41,7 +41,7 @@ public class AppMain {
 		Employee employee2 = new Employee();
 		employee2.setName("Dan Thomas");
 		employee2.setJoiningDate(new LocalDate(2012, 11, 11));
-		employee2.setSalary(new BigDecimal(20000));
+		employee2.setSalary(new Double(20000));
 		employee2.setSsn("ssn00000002");
 
 		/*
@@ -68,7 +68,7 @@ public class AppMain {
 		 */
 
 		Employee employee = service.findBySsn("ssn00000001");
-		employee.setSalary(new BigDecimal(50000));
+		employee.setSalary(new Double(50000));
 		service.updateEmployee(employee);
 
 		/*
